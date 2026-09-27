@@ -1,0 +1,126 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  background: #0b0f19;
+  color: #e6e9f0;
+}
+
+a {
+  color: inherit;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem;
+}
+
+.card {
+  background: #131a2b;
+  border: 1px solid #232c42;
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.input {
+  width: 100%;
+  padding: 0.65rem 0.8rem;
+  border-radius: 8px;
+  border: 1px solid #2a3452;
+  background: #0f1524;
+  color: #e6e9f0;
+  margin-bottom: 0.75rem;
+}
+
+.btn {
+  padding: 0.65rem 1.2rem;
+  border-radius: 8px;
+  border: none;
+  background: #5b6cff;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: #4a5aee;
+}
+
+.btn-secondary {
+  background: #232c42;
+}
+
+.grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
+.badge {
+  display: inline-block;
+  padding: 0.2rem 0.6rem;
+  border-radius: 999px;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.badge-queued { background: #4b4620; color: #f0d968; }
+.badge-processing { background: #1f3a5c; color: #6fb3ff; }
+.badge-completed { background: #1e4620; color: #7de08a; }
+.badge-failed { background: #4a1f22; color: #ff8b8b; }
+
+.error-text {
+  color: #ff8b8b;
+  margin-bottom: 0.75rem;
+}
+
+/* Dashboard Ek Eklemeleri */
+.dashboard-layout {
+  display: flex;
+  min-height: 100vh;
+}
+
+.sidebar {
+  width: 280px;
+  background: #0f1524;
+  border-right: 1px solid #232c42;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.sidebar-btn {
+  width: 100%;
+  text-align: left;
+  padding: 0.75rem 1rem;
+  border-radius: 8px;
+  border: none;
+  background: transparent;
+  color: #94a3b8;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.sidebar-btn:hover {
+  background: #131a2b;
+  color: #e6e9f0;
+}
+
+.sidebar-btn.active {
+  background: #5b6cff20;
+  color: #818cf8;
+  border: 1px solid #5b6cff40;
+}
+
+.main-content {
+  flex: 1;
+  padding: 2rem;
+  overflow-y: auto;
+}
