@@ -7,3 +7,11 @@ node_modules/
 .next/
 storage/
 *.db
+
+.env.local
+.env.*
+!.env.example
+
+backend/env
+frontend/env.local
+.abacus.donotdelete
