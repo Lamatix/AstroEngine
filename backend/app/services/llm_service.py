@@ -11,8 +11,10 @@ import httpx
 from tenacity import retry, wait_exponential, stop_after_attempt, retry_if_exception_type
 from sqlalchemy.ext.asyncio import AsyncSession
 
-from app.config import settings
+from app.config.settings import get_settings
 from app.models.llm_usage import LLMUsageLog
+
+settings = get_settings()
 
 logger = logging.getLogger("llm_service")
 
